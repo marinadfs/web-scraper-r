@@ -11,12 +11,6 @@ product_prices <- list()
 # initializing the page to scrape with the first pagination link
 page_to_scrape <- "https://scrapeme.live/shop/page/1"
 
-#enquanto houver uma pagina para fazer scrap,
-#eu quero extrair os dados daquela página
-#eu quero buscar a próxima página
-#quando não houve mais páginas, eu quero transformar as informações em um data frame
-#por fim, escrever o dataframe em um csv
-
 while (page_to_scrape != "") {
   print(page_to_scrape)
   document <- read_html(page_to_scrape)
